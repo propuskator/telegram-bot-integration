@@ -1,0 +1,51 @@
+{
+    "name": "telegram-bot",
+    "version": "1.0.0",
+    "description": "A bot to control Propuskator's access token readers through Telegram client",
+    "type": "module",
+    "main": "runner.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test:lint": "eslint lib/ runner.js bot.js --ext js",
+        "dev": "NODE_ENV=development nodemon runner.js",
+        "start": "node runner.js"
+    },
+    "pre-commit": [
+        "test:lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:propuskator/telegram-bot-integration.git"
+    },
+    "keywords": [
+        "bot",
+        "telegram"
+    ],
+    "author": "Propuskator",
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.27.0",
+        "eslint-config-webbylab": "^5.4.1",
+        "eslint-plugin-fetch": "0.0.1",
+        "eslint-plugin-import": "^2.23.3",
+        "eslint-plugin-more": "^1.0.3",
+        "eslint-plugin-no-require-lodash": "^1.1.0",
+        "eslint-plugin-prefer-spread": "^1.0.3",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-security": "^1.4.0",
+        "nodemon": "^2.0.7",
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "colors": "^1.4.0",
+        "homie-sdk": "^1.0.0",
+        "isomorphic-fetch": "^3.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "livr": "^2.3.3",
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.6.2",
+        "telegraf": "^4.3.0",
+        "winston": "^3.3.3"
+    }
+}

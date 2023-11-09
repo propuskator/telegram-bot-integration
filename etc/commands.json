@@ -1,0 +1,6 @@
+{
+  "login": "authorize Propuskator user",
+  "access_points": "get a list of your available access points",
+  "logout": "logout Propuskator user",
+  "help": "show available commands and its description"
+}
